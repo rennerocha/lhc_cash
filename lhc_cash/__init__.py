@@ -7,10 +7,7 @@ app = Flask(__name__)
 def balance():
     balance = {
         'expected': 600,
-        'actual': '23',
+        'actual': -600,
     }
     return jsonify(**balance)
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
